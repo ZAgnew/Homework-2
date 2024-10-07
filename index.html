@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="stylesheet" href="styles.css">
+<title>Page Title</title>
+</head>
+<body>
+    <!-- adding the image above the heading -->
+<img id = <img src="Long_Island_Lombres.png" alt="No Dice Boyo">
+
+<!-- this is a comment example -->
+
+<h1>The Long Island Lombres VGC Team Site</h1>
+<h2>Our Lombating Lombre's are currently 0-2</h2>
+
+<p>The roster for the Lombres is currently.</p>
+<p>Ting-Lu</p>
+<p>Dondozo</p>
+<p>Tatsugiri</p>
+<p>Sinistcha </p>
+<p>Creselia</p>
+<p>Heatran</p>
+<p>Metagross</p>
+<p>Perzerker</p>
+<p>Lombre</p>
+
+<button onclick="welcome()" >click me </button>
+
+<script>
+    function welcome(){
+        let person = prompt("Please enter your name", "Harry Potter");
+        let text;
+        if (person == null || person == "") {
+            
+            text = "User cancelled the prompt.";
+            document.getElementById("text").innerText=text;
+            } else {
+                
+                text = "Hello " + person + "! We hope you are doing well today!";
+                document.getElementById("text").innerText=text;
+            }
+            
+    }
+    
+</script>
+
+<p id="text"></p>
+
+</body>
+</html>
